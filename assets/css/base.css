@@ -187,17 +187,109 @@ input, textarea, select {
   }
 }
 
+/* Quote Preloader Styles */
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--background-light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.quote-loader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 600px;
+  text-align: center;
+  padding: 2rem;
+  position: relative;
+}
+
+.quote-text {
+  font-size: var(--font-size-xl);
+  font-weight: 500;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  color: var(--primary-color);
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease forwards, pulse 3s ease-in-out infinite;
+}
+
+.quote-author {
+  font-size: var(--font-size-base);
+  font-weight: 600;
+  color: var(--text-muted);
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease 0.5s forwards;
+}
+
 .loader-name {
   position: absolute;
-  font-size: 14px;
+  font-size: var(--font-size-xl);
   font-weight: 700;
   letter-spacing: 2px;
   color: var(--primary-color);
+  margin-top: 3rem;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease 1s forwards, glow 2s ease-in-out infinite 1s;
 }
 
 .preloader.hidden {
   opacity: 0;
   visibility: hidden;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+@keyframes glow {
+  0%, 100% {
+    text-shadow: 0 0 5px rgba(37, 99, 235, 0.3);
+  }
+  50% {
+    text-shadow: 0 0 15px rgba(37, 99, 235, 0.6);
+  }
+}
+
+/* Dark mode adjustments */
+.dark-mode .preloader {
+  background-color: var(--background-dark);
+}
+
+.dark-mode .quote-text {
+  color: var(--primary-light);
+}
+
+.dark-mode .quote-author {
+  color: var(--gray-400);
+}
+
+.dark-mode .loader-name {
+  color: var(--primary-light);
 }
 
 /* Header */

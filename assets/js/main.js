@@ -143,7 +143,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Typing animation for home section
   const typingText = document.querySelector(".typing-text")
   if (typingText) {
-    const words = ["Flutter", "Mobile Development", "UI/UX Design", "Web Development"]
+    const words = ["Flutter", "Mobile Development", "Virtual Assistant", "Web Development"]
     let wordIndex = 0
     let charIndex = 0
     let isDeleting = false
@@ -257,3 +257,25 @@ document.addEventListener("DOMContentLoaded", () => {
     })
   }
 })
+
+
+/// faq section
+document.addEventListener("DOMContentLoaded", function () {
+  const faqItems = document.querySelectorAll(".faq-item");
+
+  faqItems.forEach(item => {
+    const question = item.querySelector(".faq-question");
+
+    question.addEventListener("click", () => {
+      // Close all other items
+      faqItems.forEach(i => {
+        if (i !== item) {
+          i.classList.remove("active");
+        }
+      });
+
+      // Toggle current item
+      item.classList.toggle("active");
+    });
+  });
+});

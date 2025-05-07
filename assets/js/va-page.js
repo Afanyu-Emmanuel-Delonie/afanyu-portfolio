@@ -104,4 +104,32 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     }
   })
-  
+
+
+  /// initial animation for the hero page
+  document.addEventListener('DOMContentLoaded', function() {
+    const statNumbers = document.querySelectorAll('.stat-number');
+    
+    statNumbers.forEach(stat => {
+      const targetValue = parseInt(stat.getAttribute('data-count'));
+      const suffix = stat.getAttribute('data-suffix') || '';
+      const duration = 2000; // 2 seconds
+      const frameDuration = 1000/60; // 60fps
+      const totalFrames = Math.round(duration / frameDuration);
+      let frame = 0;
+      
+      const counter = setInterval(() => {
+        frame++;
+        const progress = frame / totalFrames;
+        const currentValue = Math.round(progress * targetValue);
+        
+        if (frame === totalFrames) {
+          stat.textContent = targetValue;
+          clearInterval(counter);
+        } else {
+          stat.textContent = currentValue;
+        }
+      }, frameDuration);
+    });
+    
+  })

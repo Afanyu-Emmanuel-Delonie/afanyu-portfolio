@@ -22,11 +22,10 @@
 <body class="light-mode">
   <!-- Preloader -->
   <div class="preloader">
-    <div class="loader">
-      <svg viewBox="0 0 80 80">
-        <circle id="loader-circle" cx="40" cy="40" r="32"></circle>
-      </svg>
-      <div class="loader-name">AFANYU</div>
+    <div class="quote-loader">
+      <div class="quote-text">Loading...</div>
+      <div class="quote-author"></div>
+      
     </div>
   </div>
 
@@ -42,7 +41,7 @@
           <li><a href="index.html#about" class="nav-link" data-en="About" data-fr="À propos">About</a></li>
           <li><a href="index.html#skills" class="nav-link" data-en="Skills" data-fr="Compétences">Skills</a></li>
           <li><a href="index.html#projects" class="nav-link" data-en="Projects" data-fr="Projets">Projects</a></li>
-          <li><a href="index.html#contact" class="nav-link" data-en="Contact" data-fr="Contact">Contact</a></li>
+          <li><a href="#contact" class="nav-link" data-en="Contact" data-fr="Contact">Contact</a></li>
           <li><a href="virtual-assistant.html" class="nav-link active" data-en="VA Services" data-fr="Services d'AA">VA Services</a></li>
         </ul>
       </nav>
@@ -66,45 +65,57 @@
 
   <main>
     <!-- VA Hero Section -->
-    <section class="va-hero">
-      <div class="container">
-        <div class="va-hero-content" data-aos="fade-up">
-          <h1 class="animate-text" data-en="Administrative Virtual Assistant" data-fr="Assistant Administratif Virtuel">Administrative Virtual Assistant</h1>
-          <div class="quote-box animate-text-delay">
-            <blockquote data-en="Efficiency is doing things right; effectiveness is doing the right things — I do both." data-fr="L'efficacité, c'est faire les choses correctement; l'efficience, c'est faire les bonnes choses — Je fais les deux.">
-              "Efficiency is doing things right; effectiveness is doing the right things — I do both."
-            </blockquote>
-          </div>
-          <div class="va-hero-buttons animate-text-delay-2">
-            <a href="#va-contact" class="btn primary-btn" data-en="Hire Me" data-fr="Engagez-moi">Hire Me</a>
-            <a href="#va-packages" class="btn secondary-btn" data-en="View Packages" data-fr="Voir les Forfaits">View Packages</a>
+    <section class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-shapes">
+          <div class="hero-shape hero-shape-1"></div>
+          <div class="hero-shape hero-shape-2"></div>
+          <div class="hero-shape hero-shape-3"></div>
+        </div>
+        
+        <div class="container">
+          <div class="hero-content">
+            <div class="hero-text fade-in">
+              <h1 class="hero-title">Administrative Virtual Assistant</h1>
+              <p class="hero-description">Transforming your administrative chaos into streamlined efficiency. Focus on growing your business while I handle the details.</p>
+              
+              <div class="quote-box slide-up">
+                <blockquote data-en="Efficiency is doing things right; effectiveness is doing the right things — I do both." data-fr="L'efficacité, c'est faire les choses correctement; l'efficience, c'est faire les bonnes choses — Je fais les deux.">
+                  "Efficiency is doing things right; effectiveness is doing the right things — I do both."
+                </blockquote>
+              </div>
+              
+              <div class="hero-buttons slide-up">
+                <a href="#va-contact" class="btn primary-btn" data-en="Hire Me" data-fr="Engagez-moi">Hire Me</a>
+                <a href="#va-packages" class="btn secondary-btn" data-en="View Packages" data-fr="Voir les Forfaits">View Packages</a>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="va-hero-bg"></div>
-      <div class="va-hero-stats" data-aos="fade-up" data-aos-delay="300">
-        <div class="container">
+      </section>
+      
+      <div class="container">
+        <div class="stats-section slide-up">
           <div class="stats-grid">
             <div class="stat-item">
-              <div class="stat-number" data-count="50">0</div>
+              <div class="stat-number" data-count="50" data-suffix="">03</div>
               <div class="stat-text" data-en="Happy Clients" data-fr="Clients Satisfaits">Happy Clients</div>
             </div>
             <div class="stat-item">
-              <div class="stat-number" data-count="120">0</div>
+              <div class="stat-number" data-count="120" data-suffix="+">20+</div>
               <div class="stat-text" data-en="Projects Completed" data-fr="Projets Complétés">Projects Completed</div>
             </div>
             <div class="stat-item">
-              <div class="stat-number" data-count="3">0</div>
+              <div class="stat-number" data-count="3" data-suffix="+">+</div>
               <div class="stat-text" data-en="Years Experience" data-fr="Années d'Expérience">Years Experience</div>
             </div>
             <div class="stat-item">
-              <div class="stat-number" data-count="98">0</div>
-              <div class="stat-text" data-en="Satisfaction Rate" data-fr="Taux de Satisfaction">Satisfaction Rate %</div>
+              <div class="stat-number" data-count="98" data-suffix="%">98%</div>
+              <div class="stat-text" data-en="Satisfaction Rate" data-fr="Taux de Satisfaction">Satisfaction Rate</div>
             </div>
           </div>
         </div>
       </div>
-    </section>
 
     <!-- VA Services Section -->
     <section class="va-services">
@@ -253,42 +264,32 @@
         </div>
         <div class="tools-grid" data-aos="fade-up" data-aos-delay="100">
           <div class="tool-item" data-aos="zoom-in" data-aos-delay="150">
-            <img src="/placeholder.svg?height=80&width=80" alt="Notion">
+            <img src="/assets/img/work-tools/nortion.png" alt="Notion">
             <h3>Notion</h3>
             <p>All-in-one workspace for notes, tasks, wikis, and databases</p>
           </div>
           <div class="tool-item" data-aos="zoom-in" data-aos-delay="200">
-            <img src="/placeholder.svg?height=80&width=80" alt="Google Workspace">
+            <img src="/assets/img/work-tools/google.png" alt="Google Workspace">
             <h3>Google Workspace</h3>
             <p>Suite of cloud computing, productivity and collaboration tools</p>
           </div>
           <div class="tool-item" data-aos="zoom-in" data-aos-delay="250">
-            <img src="/placeholder.svg?height=80&width=80" alt="Microsoft Excel">
+            <img src="/assets/img/work-tools/ms-excel.png" alt="Microsoft Excel">
             <h3>Microsoft Excel</h3>
             <p>Spreadsheet program for calculations, pivot tables, and data analysis</p>
           </div>
           <div class="tool-item" data-aos="zoom-in" data-aos-delay="300">
-            <img src="/placeholder.svg?height=80&width=80" alt="Trello">
+            <img src="/assets/img/work-tools/trello.png" alt="Trello">
             <h3>Trello</h3>
             <p>Visual tool for organizing work with boards, lists, and cards</p>
           </div>
           <div class="tool-item" data-aos="zoom-in" data-aos-delay="350">
-            <img src="/placeholder.svg?height=80&width=80" alt="ChatGPT">
+            <img src="/assets/img/work-tools/gpt.png" alt="ChatGPT">
             <h3>ChatGPT</h3>
             <p>AI assistant for content creation, research, and problem-solving</p>
           </div>
-          <div class="tool-item" data-aos="zoom-in" data-aos-delay="400">
-            <img src="/placeholder.svg?height=80&width=80" alt="Asana">
-            <h3>Asana</h3>
-            <p>Work management platform for teams to organize, track, and manage work</p>
-          </div>
-          <div class="tool-item" data-aos="zoom-in" data-aos-delay="450">
-            <img src="/placeholder.svg?height=80&width=80" alt="Slack">
-            <h3>Slack</h3>
-            <p>Business communication platform for messaging and file sharing</p>
-          </div>
           <div class="tool-item" data-aos="zoom-in" data-aos-delay="500">
-            <img src="/placeholder.svg?height=80&width=80" alt="Canva">
+            <img src="/assets/img/work-tools/canva.png" alt="Canva">
             <h3>Canva</h3>
             <p>Graphic design platform for creating social media graphics and presentations</p>
           </div>
@@ -649,7 +650,7 @@
                 </p>
               </div>
               <div class="testimonial-author">
-                <img src="/placeholder.svg?height=80&width=80" alt="Client" class="author-image">
+                <img src="/assets/img/afa.jpg" alt="Client" class="author-image">
                 <div class="author-info">
                   <h4>Robert Chen</h4>
                   <p>CEO, TechInnovate</p>
@@ -673,7 +674,7 @@
                 </p>
               </div>
               <div class="testimonial-author">
-                <img src="/placeholder.svg?height=80&width=80" alt="Client" class="author-image">
+                <img src="/assets/img/del.jpg" alt="Client" class="author-image">
                 <div class="author-info">
                   <h4>Sarah Johnson</h4>
                   <p>Founder, Creative Solutions</p>
@@ -697,7 +698,7 @@
                 </p>
               </div>
               <div class="testimonial-author">
-                <img src="/placeholder.svg?height=80&width=80" alt="Client" class="author-image">
+                <img src="/assets/img/del.jpg" alt="Client" class="author-image">
                 <div class="author-info">
                   <h4>Michael Rodriguez</h4>
                   <p>Marketing Director, Global Reach</p>
@@ -726,24 +727,32 @@
     </section>
 
     <!-- VA Contact Section -->
-    <section id="va-contact" class="contact-section">
+  
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
       <div class="container">
         <div class="section-header" data-aos="fade-up">
-          <h2 class="section-title" data-en="Hire Me As Your VA" data-fr="Engagez-Moi Comme Votre AA">Hire Me As Your VA</h2>
+          <h2 class="section-title" data-en="Get In Touch" data-fr="Contactez-Moi">Get In Touch</h2>
           <div class="section-line"></div>
-          <p class="section-subtitle" data-en="Let's discuss how I can help you streamline your business operations" data-fr="Discutons de la façon dont je peux vous aider à rationaliser vos opérations commerciales">
-            Let's discuss how I can help you streamline your business operations
-          </p>
         </div>
         <div class="contact-content">
           <div class="contact-info" data-aos="fade-right" data-aos-duration="1000">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-text">
+                <h3 data-en="Location" data-fr="Emplacement">Location</h3>
+                <p>Kigali, Rwanda</p>
+              </div>
+            </div>
             <div class="contact-item">
               <div class="contact-icon">
                 <i class="fas fa-envelope"></i>
               </div>
               <div class="contact-text">
                 <h3 data-en="Email" data-fr="Email">Email</h3>
-                <p>afanyuemma2002@gmail.com</p>
+                <p>afanyu.emmanuel@example.com</p>
               </div>
             </div>
             <div class="contact-item">
@@ -761,33 +770,29 @@
               </div>
               <div class="contact-text">
                 <h3 data-en="Availability" data-fr="Disponibilité">Availability</h3>
-                <p data-en="Monday - Friday: 9am - 6pm EAT" data-fr="Lundi - Vendredi: 9h - 18h EAT">Monday - Friday: 9am - 6pm EAT</p>
-              </div>
-            </div>
-            <div class="contact-item">
-              <div class="contact-icon">
-                <i class="fas fa-globe"></i>
-              </div>
-              <div class="contact-text">
-                <h3 data-en="Location" data-fr="Emplacement">Location</h3>
-                <p>Kigali, Rwanda (Working Remotely)</p>
+                <p data-en="Monday - Friday: 9am - 6pm" data-fr="Lundi - Vendredi: 9h - 18h">Monday - Friday: 9am - 6pm</p>
               </div>
             </div>
             <div class="social-links">
-              <a href="https://linkedin.com/" target="_blank" class="social-link">
+              <a href="https://github.com/Afanyu-Emmanuel-Delonie" target="_blank" class="social-link">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="www.linkedin.com/in/afanyuemmanuel" target="_blank" class="social-link">
                 <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="https://twitter.com/" target="_blank" class="social-link">
+                <i class="fab fa-twitter"></i>
               </a>
               <a href="https://wa.me/250798971739" target="_blank" class="social-link whatsapp-link">
                 <i class="fab fa-whatsapp"></i>
                 <span data-en="Chat on WhatsApp" data-fr="Discuter sur WhatsApp">Chat on WhatsApp</span>
               </a>
-           
             </div>
           </div>
           <div class="contact-form" data-aos="fade-left" data-aos-duration="1000">
             <!-- Django CSRF Token will go here -->
             <!-- {% csrf_token %} -->
-            <form id="vaContactForm" class="contact-form-element">
+            <form id="contactForm" class="contact-form-element">
               <div class="form-group">
                 <label for="name" data-en="Name" data-fr="Nom">Name</label>
                 <input type="text" id="name" name="name" required>
@@ -797,31 +802,8 @@
                 <input type="email" id="email" name="email" required>
               </div>
               <div class="form-group">
-                <label for="service" data-en="Service Needed" data-fr="Service Requis">Service Needed</label>
-                <select id="service" name="service" required>
-                  <option value="" data-en="Select a service" data-fr="Sélectionnez un service">Select a service</option>
-                  <option value="calendar" data-en="Calendar Management" data-fr="Gestion de Calendrier">Calendar Management</option>
-                  <option value="email" data-en="Email Management" data-fr="Gestion des Emails">Email Management</option>
-                  <option value="document" data-en="Document Preparation" data-fr="Préparation de Documents">Document Preparation</option>
-                  <option value="task" data-en="Task Management" data-fr="Gestion des Tâches">Task Management</option>
-                  <option value="data" data-en="Data Entry & Analysis" data-fr="Saisie et Analyse de Données">Data Entry & Analysis</option>
-                  <option value="client" data-en="Client Communication" data-fr="Communication Client">Client Communication</option>
-                  <option value="research" data-en="Research & Analysis" data-fr="Recherche et Analyse">Research & Analysis</option>
-                  <option value="social" data-en="Social Media Management" data-fr="Gestion des Médias Sociaux">Social Media Management</option>
-                  <option value="package" data-en="Package Inquiry" data-fr="Demande de Forfait">Package Inquiry</option>
-                  <option value="other" data-en="Other" data-fr="Autre">Other</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="package" data-en="Preferred Package" data-fr="Forfait Préféré">Preferred Package</label>
-                <select id="package" name="package">
-                  <option value="" data-en="Select a package" data-fr="Sélectionnez un forfait">Select a package</option>
-                  <option value="basic" data-en="Basic Package" data-fr="Forfait de Base">Basic Package</option>
-                  <option value="standard" data-en="Standard Package" data-fr="Forfait Standard">Standard Package</option>
-                  <option value="premium" data-en="Premium Package" data-fr="Forfait Premium">Premium Package</option>
-                  <option value="custom" data-en="Custom Package" data-fr="Forfait Personnalisé">Custom Package</option>
-                  <option value="not-sure" data-en="Not Sure Yet" data-fr="Pas Encore Sûr">Not Sure Yet</option>
-                </select>
+                <label for="subject" data-en="Subject" data-fr="Sujet">Subject</label>
+                <input type="text" id="subject" name="subject" required>
               </div>
               <div class="form-group">
                 <label for="message" data-en="Message" data-fr="Message">Message</label>
@@ -834,6 +816,9 @@
             </form>
           </div>
         </div>
+      </div>
+      <div class="contact-map" data-aos="fade-up" data-aos-delay="200">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255282.35853027376!2d29.98673765526314!3d-1.9441023959065903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dca4258ed8e797%3A0xf32b36a5411e0e91!2sKigali%2C%20Rwanda!5e0!3m2!1sen!2s!4v1620120354400!5m2!1sen!2s" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </div>
     </section>
   </main>
@@ -883,5 +868,75 @@
   <script src="assets/js/va-services.js"></script>
   <script src="assets/js/testimonials.js"></script>
   <script src="assets/js/contact.js"></script>
+   <!-- /// loading animation qouates -->
+   <script>
+    // Simple standalone implementation
+    (function() {
+      // Quotes collection
+      const quotes = [
+        {
+          text: "Talent wins games, but teamwork and intelligence win championships.",
+          author: "Michael Jordan"
+        },
+        {
+          text: "The strength of the team is each individual member. The strength of each member is the team.",
+          author: "Phil Jackson"
+        },
+        {
+          text: "Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work.",
+          author: "Steve Jobs"
+        },
+        {
+          text: "The best way to predict the future is to create it.",
+          author: "Peter Drucker"
+        },
+        {
+          text: "Innovation distinguishes between a leader and a follower.",
+          author: "Steve Jobs"
+        },
+        {
+          text: "The only limit to our realization of tomorrow is our doubts of today.",
+          author: "Franklin D. Roosevelt"
+        },
+        {
+          text: "Quality is not an act, it is a habit.",
+          author: "Aristotle"
+        }
+      ];
+      
+      // Function to set a random quote
+      function setRandomQuote() {
+        const quoteTextEl = document.querySelector('.quote-text');
+        const quoteAuthorEl = document.querySelector('.quote-author');
+        
+        if (quoteTextEl && quoteAuthorEl) {
+          // Get random quote
+          const randomIndex = Math.floor(Math.random() * quotes.length);
+          const randomQuote = quotes[randomIndex];
+          
+          // Set quote text and author
+          quoteTextEl.textContent = `"${randomQuote.text}"`;
+          quoteAuthorEl.textContent = `- ${randomQuote.author}`;
+        }
+      }
+      
+      // Function to hide preloader
+      function hidePreloader() {
+        const preloader = document.querySelector('.preloader');
+        if (preloader) {
+          preloader.classList.add('hidden');
+        }
+      }
+      
+      // Set random quote immediately
+      setRandomQuote();
+      
+      // Hide preloader after page loads
+      window.addEventListener('load', function() {
+        // Wait 6 seconds before hiding
+        setTimeout(hidePreloader, 6000);
+      });
+    })();
+    </script>
 </body>
 </html>
