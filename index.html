@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Afanyu Emmanuel | Software Engineer</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/pages/home.css">
+  <link rel="stylesheet" href="assets/css/pages/va-services.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- AOS Animation Library -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body class="light-mode">
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="loader">
+      <svg viewBox="0 0 80 80">
+        <circle id="loader-circle" cx="40" cy="40" r="32"></circle>
+      </svg>
+      <div class="loader-name">AFANYU</div>
+    </div>
+  </div> 
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <a href="index.html" data-en="Afanyu" data-fr="Afanyu">Afanyu</a>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active" data-en="Home" data-fr="Accueil">Home</a></li>
+          <li><a href="#about" class="nav-link" data-en="About" data-fr="À propos">About</a></li>
+          <li><a href="#skills" class="nav-link" data-en="Skills" data-fr="Compétences">Skills</a></li>
+          <li><a href="#projects" class="nav-link" data-en="Projects" data-fr="Projets">Projects</a></li>
+          <li><a href="#contact" class="nav-link" data-en="Contact" data-fr="Contact">Contact</a></li>
+          <li><a href="virtual-assistant.html" class="nav-link" data-en="VA Services" data-fr="Services d'AA">VA Services</a></li>
+        </ul>
+      </nav>
+      <div class="header-controls">
+        <div class="language-toggle">
+          <button id="en-toggle" class="active">EN</button>
+          <button id="fr-toggle">FR</button>
+        </div>
+        <div class="theme-toggle">
+          <i class="fas fa-sun"></i>
+          <i class="fas fa-moon"></i>
+        </div>
+        <div class="mobile-menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Home Section -->
+    <section id="home" class="home-section">
+      <div class="container">
+        <div class="home-content">
+          <div class="home-text" data-aos="fade-right" data-aos-duration="1000">
+            <h1 class="animate-text">
+              <span class="greeting" data-en="Hi, I'm" data-fr="Bonjour, je suis">Hi, I'm</span>
+              <span class="name">Afanyu Emmanuel</span>
+              <span class="emoji">👋</span>
+            </h1>
+            <h2 class="animate-text-delay" data-en="Mobile Developer & Software Engineering Student" data-fr="Développeur Mobile & Étudiant en Génie Logiciel">Mobile Developer & Software Engineering Student</h2>
+            <div class="typing-container animate-text-delay-2">
+              <span class="static-text" data-en="Specialized in" data-fr="Spécialisé en">Specialized in</span>
+              <span class="typing-text"></span>
+            </div>
+            <p class="animate-text-delay-2" data-en="Passionate about creating beautiful, functional mobile applications with Flutter. Currently studying at AUCA and working at ZiloTech." data-fr="Passionné par la création d'applications mobiles belles et fonctionnelles avec Flutter. Actuellement étudiant à l'AUCA et travaillant chez ZiloTech.">
+              Passionate about creating beautiful, functional mobile applications with Flutter. Currently studying at AUCA and working at ZiloTech.
+            </p>
+            <div class="cta-buttons animate-text-delay-3">
+              <a href="#projects" class="btn primary-btn" data-en="View Projects" data-fr="Voir les Projets">View Projects</a>
+              <a href="#contact" class="btn secondary-btn" data-en="Hire Me" data-fr="Engagez-moi">Hire Me</a>
+              <a href="assets/files/afanyu-emmanuel-cv.pdf" class="btn outline-btn" download data-en="Download CV" data-fr="Télécharger CV">
+                <i class="fas fa-download"></i> Download CV
+              </a>
+            </div>
+          </div>
+          <div class="home-image" data-aos="fade-left" data-aos-duration="1000">
+            <div class="image-container">
+              <img src="assets/img/del.jpg" alt="Afanyu Emmanuel" class="profile-image">
+              <div class="image-shape"></div>
+            </div>
+          </div>
+        </div>
+        <div class="scroll-indicator">
+          <div class="mouse">
+            <div class="wheel"></div>
+          </div>
+          <div class="arrow">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+      <div class="parallax-bg"></div>
+      <div class="social-links-vertical">
+        <a href="https://github.com/" target="_blank" class="social-link-vertical">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://linkedin.com/" target="_blank" class="social-link-vertical">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://twitter.com/" target="_blank" class="social-link-vertical">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://wa.me/250798971739" target="_blank" class="social-link-vertical">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+        <div class="vertical-line"></div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2 class="section-title" data-en="About Me" data-fr="À Propos de Moi">About Me</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="about-content">
+          <div class="about-image" data-aos="fade-right" data-aos-duration="1000">
+            <img src="/assets/img/afa.jpg" alt="Afanyu Emmanuel" class="about-profile-image">
+            <div class="experience-badge">
+              <span class="number">1+</span>
+              <span class="text">Years of Experience</span>
+            </div>
+          </div>
+          <div class="about-text" data-aos="fade-left" data-aos-duration="1000">
+            <p data-en="I am a passionate software engineering student at the Adventist University of Central Africa (AUCA) in Rwanda, with a strong focus on mobile development using Flutter. My journey in tech began with a curiosity about how applications work, which quickly evolved into a deep passion for creating them myself." data-fr="Je suis un étudiant passionné en génie logiciel à l'Université Adventiste d'Afrique Centrale (AUCA) au Rwanda, avec une forte concentration sur le développement mobile utilisant Flutter. Mon parcours dans la technologie a commencé par une curiosité sur le fonctionnement des applications, qui s'est rapidement transformée en une passion profonde pour les créer moi-même.">
+              I am a passionate software engineering student at the Adventist University of Central Africa (AUCA) in Rwanda, with a strong focus on mobile development using Flutter. My journey in tech began with a curiosity about how applications work, which quickly evolved into a deep passion for creating them myself.
+            </p>
+            <p data-en="Currently, I work at ZiloTech as a Mobile Developer, where I build innovative solutions using Flutter. Prior to this, I completed an internship at FreshSens from May to August 2024, where I gained valuable industry experience and refined my skills in mobile application development." data-fr="Actuellement, je travaille chez ZiloTech en tant que développeur mobile, où je construis des solutions innovantes en utilisant Flutter. Avant cela, j'ai effectué un stage chez FreshSens de mai à août 2024, où j'ai acquis une précieuse expérience dans l'industrie et affiné mes compétences en développement d'applications mobiles.">
+              Currently, I work at ZiloTech as a Mobile Developer, where I build innovative solutions using Flutter. Prior to this, I completed an internship at FreshSens from May to August 2024, where I gained valuable industry experience and refined my skills in mobile application development.
+            </p>
+            <blockquote data-en="The best way to predict the future is to create it." data-fr="La meilleure façon de prédire l'avenir est de le créer.">
+              "The best way to predict the future is to create it."
+            </blockquote>
+            <div class="personal-info">
+              <div class="info-item">
+                <span class="info-title">Name:</span>
+                <span class="info-value">Afanyu Emmanuel</span>
+              </div>
+              <div class="info-item">
+                <span class="info-title">Email:</span>
+                <span class="info-value">afanyu.emmanuel@example.com</span>
+              </div>
+              <div class="info-item">
+                <span class="info-title">Location:</span>
+                <span class="info-value">Kigali, Rwanda</span>
+              </div>
+              <div class="info-item">
+                <span class="info-title">Availability:</span>
+                <span class="info-value available">Available for Freelance</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="timeline" data-aos="fade-up" data-aos-duration="1000">
+          <div class="timeline-item">
+            <div class="timeline-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <div class="timeline-content">
+              <h3 data-en="Adventist University of Central Africa (AUCA)" data-fr="Université Adventiste d'Afrique Centrale (AUCA)">Adventist University of Central Africa (AUCA)</h3>
+              <p data-en="Software Engineering Student" data-fr="Étudiant en Génie Logiciel">Software Engineering Student</p>
+              <span class="timeline-date" data-en="2021 - Present" data-fr="2021 - Présent">2021 - Present</span>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-icon">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <div class="timeline-content">
+              <h3 data-en="ZiloTech" data-fr="ZiloTech">ZiloTech</h3>
+              <p data-en="Mobile Developer" data-fr="Développeur Mobile">Mobile Developer</p>
+              <span class="timeline-date" data-en="2023 - Present" data-fr="2023 - Présent">2023 - Present</span>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-icon">
+              <i class="fas fa-laptop-code"></i>
+            </div>
+            <div class="timeline-content">
+              <h3 data-en="FreshSens" data-fr="FreshSens">FreshSens</h3>
+              <p data-en="Mobile Development Intern" data-fr="Stagiaire en Développement Mobile">Mobile Development Intern</p>
+              <span class="timeline-date" data-en="May 2024 - August 2024" data-fr="Mai 2024 - Août 2024">May 2024 - August 2024</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2 class="section-title" data-en="My Skills" data-fr="Mes Compétences">My Skills</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="skills-content">
+          <div class="skills-text" data-aos="fade-up">
+            <p data-en="I specialize in mobile development with Flutter, but I'm constantly expanding my skillset to become a more versatile developer. Here are some of the technologies and skills I've acquired throughout my journey:" data-fr="Je me spécialise dans le développement mobile avec Flutter, mais j'élargis constamment mes compétences pour devenir un développeur plus polyvalent. Voici quelques-unes des technologies et compétences que j'ai acquises tout au long de mon parcours:">
+              I specialize in mobile development with Flutter, but I'm constantly expanding my skillset to become a more versatile developer. Here are some of the technologies and skills I've acquired throughout my journey:
+            </p>
+          </div>
+          
+          <div class="skills-grid active" id="technical-skills" data-aos="fade-up" data-aos-delay="200">
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fab fa-flutter"></i>
+              </div>
+              <h3 data-en="Flutter" data-fr="Flutter">Flutter</h3>
+              <div class="skill-level">
+                <div class="skill-progress" data-progress="90"></div>
+              </div>
+              <div class="skill-percentage">0%</div>
+              <span data-en="Advanced" data-fr="Avancé">Advanced</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fab fa-dart"></i>
+              </div>
+              <h3 data-en="Dart" data-fr="Dart">Dart</h3>
+              <div class="skill-level">
+                <div class="skill-progress" data-progress="85"></div>
+              </div>
+              <div class="skill-percentage">0%</div>
+              <span data-en="Advanced" data-fr="Avancé">Advanced</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fab fa-html5"></i>
+              </div>
+              <h3 data-en="HTML/CSS" data-fr="HTML/CSS">HTML/CSS</h3>
+              <div class="skill-level">
+                <div class="skill-progress" data-progress="80"></div>
+              </div>
+              <div class="skill-percentage">0%</div>
+              <span data-en="Proficient" data-fr="Compétent">Proficient</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fab fa-js"></i>
+              </div>
+              <h3 data-en="JavaScript" data-fr="JavaScript">JavaScript</h3>
+              <div class="skill-level">
+                <div class="skill-progress" data-progress="75"></div>
+              </div>
+              <div class="skill-percentage">0%</div>
+              <span data-en="Intermediate" data-fr="Intermédiaire">Intermediate</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fab fa-python"></i>
+              </div>
+              <h3 data-en="Python" data-fr="Python">Python</h3>
+              <div class="skill-level">
+                <div class="skill-progress" data-progress="65"></div>
+              </div>
+              <div class="skill-percentage">0%</div>
+              <span data-en="Intermediate" data-fr="Intermédiaire">Intermediate</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fab fa-react"></i>
+              </div>
+              <h3 data-en="React JS" data-fr="React JS">React JS</h3>
+              <div class="skill-level">
+                <div class="skill-progress" data-progress="60"></div>
+              </div>
+              <div class="skill-percentage">0%</div>
+              <span data-en="Learning" data-fr="En apprentissage">Learning</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fas fa-database"></i>
+              </div>
+              <h3 data-en="SQL" data-fr="SQL">SQL</h3>
+              <div class="skill-level">
+                <div class="skill-progress" data-progress="70"></div>
+              </div>
+              <div class="skill-percentage">0%</div>
+              <span data-en="Intermediate" data-fr="Intermédiaire">Intermediate</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fas fa-mobile-alt"></i>
+              </div>
+              <h3 data-en="Responsive Design" data-fr="Design Responsive">Responsive Design</h3>
+              <div class="skill-level">
+                <div class="skill-progress" data-progress="85"></div>
+              </div>
+              <div class="skill-percentage">0%</div>
+              <span data-en="Proficient" data-fr="Compétent">Proficient</span>
+            </div>
+          </div>
+          <div class="skills-grid" id="soft-skills">
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fas fa-comments"></i>
+              </div>
+              <h3 data-en="Communication" data-fr="Communication">Communication</h3>
+              <div class="skill-level">
+                <div class="skill-progress" data-progress="90"></div>
+              </div>
+              <div class="skill-percentage">0%</div>
+              <span data-en="Excellent" data-fr="Excellent">Excellent</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fas fa-tasks"></i>
+              </div>
+              <h3 data-en="Organization" data-fr="Organisation">Organization</h3>
+              <div class="skill-level">
+                <div class="skill-progress" data-progress="95"></div>
+              </div>
+              <div class="skill-percentage">0%</div>
+              <span data-en="Excellent" data-fr="Excellent">Excellent</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fas fa-lightbulb"></i>
+              </div>
+              <h3 data-en="Problem-Solving" data-fr="Résolution de problèmes">Problem-Solving</h3>
+              <div class="skill-level">
+                <div class="skill-progress" data-progress="85"></div>
+              </div>
+              <div class="skill-percentage">0%</div>
+              <span data-en="Strong" data-fr="Fort">Strong</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fas fa-users"></i>
+              </div>
+              <h3 data-en="Teamwork" data-fr="Travail d'équipe">Teamwork</h3>
+              <div class="skill-level">
+                <div class="skill-progress" data-progress="90"></div>
+              </div>
+              <div class="skill-percentage">0%</div>
+              <span data-en="Excellent" data-fr="Excellent">Excellent</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fas fa-clock"></i>
+              </div>
+              <h3 data-en="Time Management" data-fr="Gestion du temps">Time Management</h3>
+              <div class="skill-level">
+                <div class="skill-progress" data-progress="85"></div>
+              </div>
+              <div class="skill-percentage">0%</div>
+              <span data-en="Strong" data-fr="Fort">Strong</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fas fa-brain"></i>
+              </div>
+              <h3 data-en="Adaptability" data-fr="Adaptabilité">Adaptability</h3>
+              <div class="skill-level">
+                <div class="skill-progress" data-progress="80"></div>
+              </div>
+              <div class="skill-percentage">0%</div>
+              <span data-en="Strong" data-fr="Fort">Strong</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <h3 data-en="Leadership" data-fr="Leadership">Leadership</h3>
+              <div class="skill-level">
+                <div class="skill-progress" data-progress="75"></div>
+              </div>
+              <div class="skill-percentage">0%</div>
+              <span data-en="Developing" data-fr="En développement">Developing</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fas fa-bullseye"></i>
+              </div>
+              <h3 data-en="Attention to Detail" data-fr="Souci du détail">Attention to Detail</h3>
+              <div class="skill-level">
+                <div class="skill-progress" data-progress="90"></div>
+              </div>
+              <div class="skill-percentage">0%</div>
+              <span data-en="Excellent" data-fr="Excellent">Excellent</span>
+            </div>
+          </div>
+          <div class="skills-grid" id="tools-skills">
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fab fa-git-alt"></i>
+              </div>
+              <h3 data-en="Git & GitHub" data-fr="Git & GitHub">Git & GitHub</h3>
+              <div class="skill-level">
+                <div class="skill-progress" data-progress="85"></div>
+              </div>
+              <div class="skill-percentage">0%</div>
+              <span data-en="Proficient" data-fr="Compétent">Proficient</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fab fa-figma"></i>
+              </div>
+              <h3 data-en="Figma" data-fr="Figma">Figma</h3>
+              <div class="skill-level">
+                <div class="skill-progress" data-progress="75"></div>
+              </div>
+              <div class="skill-percentage">0%</div>
+              <span data-en="Intermediate" data-fr="Intermédiaire">Intermediate</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fas fa-code"></i>
+              </div>
+              <h3 data-en="VS Code" data-fr="VS Code">VS Code</h3>
+              <div class="skill-level">
+                <div class="skill-progress" data-progress="90"></div>
+              </div>
+              <div class="skill-percentage">0%</div>
+              <span data-en="Advanced" data-fr="Avancé">Advanced</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fab fa-android"></i>
+              </div>
+              <h3 data-en="Android Studio" data-fr="Android Studio">Android Studio</h3>
+              <div class="skill-level">
+                <div class="skill-progress" data-progress="80"></div>
+              </div>
+              <div class="skill-percentage">0%</div>
+              <span data-en="Proficient" data-fr="Compétent">Proficient</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fas fa-fire"></i>
+              </div>
+              <h3 data-en="Firebase" data-fr="Firebase">Firebase</h3>
+              <div class="skill-level">
+                <div class="skill-progress" data-progress="75"></div>
+              </div>
+              <div class="skill-percentage">0%</div>
+              <span data-en="Intermediate" data-fr="Intermédiaire">Intermediate</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fas fa-terminal"></i>
+              </div>
+              <h3 data-en="Command Line" data-fr="Ligne de commande">Command Line</h3>
+              <div class="skill-level">
+                <div class="skill-progress" data-progress="80"></div>
+              </div>
+              <div class="skill-percentage">0%</div>
+              <span data-en="Proficient" data-fr="Compétent">Proficient</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fas fa-project-diagram"></i>
+              </div>
+              <h3 data-en="Jira" data-fr="Jira">Jira</h3>
+              <div class="skill-level">
+                <div class="skill-progress" data-progress="70"></div>
+              </div>
+              <div class="skill-percentage">0%</div>
+              <span data-en="Intermediate" data-fr="Intermédiaire">Intermediate</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fas fa-palette"></i>
+              </div>
+              <h3 data-en="Adobe XD" data-fr="Adobe XD">Adobe XD</h3>
+              <div class="skill-level">
+                <div class="skill-progress" data-progress="65"></div>
+              </div>
+              <div class="skill-percentage">0%</div>
+              <span data-en="Intermediate" data-fr="Intermédiaire">Intermediate</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2 class="section-title" data-en="My Projects" data-fr="Mes Projets">My Projects</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="projects-filter" data-aos="fade-up" data-aos-delay="100">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+          <button class="filter-btn" data-filter="web">Web Development</button>
+          <button class="filter-btn" data-filter="ui">UI/UX Design</button>
+        </div>
+        <div class="projects-grid" data-aos="fade-up" data-aos-delay="200">
+          <div class="project-card" data-category="mobile">
+            <div class="project-image">
+              <img src="/placeholder.svg?height=300&width=500" alt="Flutter E-commerce App">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="#" class="project-link" target="_blank"><i class="fas fa-eye"></i></a>
+                  <a href="#" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+                  <a href="#" class="project-link project-details-trigger" data-project="ecommerce"><i class="fas fa-info-circle"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3 data-en="E-commerce Mobile App" data-fr="Application Mobile E-commerce">E-commerce Mobile App</h3>
+              <p data-en="A Flutter-based e-commerce application with clean UI, animations, and Firebase integration." data-fr="Une application e-commerce basée sur Flutter avec une interface utilisateur épurée, des animations et une intégration Firebase.">
+                A Flutter-based e-commerce application with clean UI, animations, and Firebase integration.
+              </p>
+              <div class="project-tags">
+                <span>Flutter</span>
+                <span>Firebase</span>
+                <span>Dart</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-card" data-category="mobile">
+            <div class="project-image">
+              <img src="/placeholder.svg?height=300&width=500" alt="Task Management App">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="#" class="project-link" target="_blank"><i class="fas fa-eye"></i></a>
+                  <a href="#" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+                  <a href="#" class="project-link project-details-trigger" data-project="taskmanager"><i class="fas fa-info-circle"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3 data-en="Task Management App" data-fr="Application de Gestion des Tâches">Task Management App</h3>
+              <p data-en="A productivity app built with Flutter featuring task categorization, reminders, and cloud sync." data-fr="Une application de productivité construite avec Flutter comprenant la catégorisation des tâches, des rappels et une synchronisation cloud.">
+                A productivity app built with Flutter featuring task categorization, reminders, and cloud sync.
+              </p>
+              <div class="project-tags">
+                <span>Flutter</span>
+                <span>Hive</span>
+                <span>Provider</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-card" data-category="mobile">
+            <div class="project-image">
+              <img src="/placeholder.svg?height=300&width=500" alt="Weather App">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="#" class="project-link" target="_blank"><i class="fas fa-eye"></i></a>
+                  <a href="#" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+                  <a href="#" class="project-link project-details-trigger" data-project="weather"><i class="fas fa-info-circle"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3 data-en="Weather Forecast App" data-fr="Application de Prévisions Météo">Weather Forecast App</h3>
+              <p data-en="A beautiful weather application with animations, location detection, and 7-day forecasts." data-fr="Une belle application météo avec des animations, une détection de localisation et des prévisions sur 7 jours.">
+                A beautiful weather application with animations, location detection, and 7-day forecasts.
+              </p>
+              <div class="project-tags">
+                <span>Flutter</span>
+                <span>API</span>
+                <span>Animations</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-card" data-category="mobile">
+            <div class="project-image">
+              <img src="/placeholder.svg?height=300&width=500" alt="Chat Application">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="#" class="project-link" target="_blank"><i class="fas fa-eye"></i></a>
+                  <a href="#" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+                  <a href="#" class="project-link project-details-trigger" data-project="chat"><i class="fas fa-info-circle"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3 data-en="Real-time Chat App" data-fr="Application de Chat en Temps Réel">Real-time Chat App</h3>
+              <p data-en="A messaging application with real-time updates, media sharing, and user authentication." data-fr="Une application de messagerie avec des mises à jour en temps réel, le partage de médias et l'authentification des utilisateurs.">
+                A messaging application with real-time updates, media sharing, and user authentication.
+              </p>
+              <div class="project-tags">
+                <span>Flutter</span>
+                <span>Firebase</span>
+                <span>Cloud Functions</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-card" data-category="web">
+            <div class="project-image">
+              <img src="/placeholder.svg?height=300&width=500" alt="Portfolio Website">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="#" class="project-link" target="_blank"><i class="fas fa-eye"></i></a>
+                  <a href="#" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+                  <a href="#" class="project-link project-details-trigger" data-project="portfolio"><i class="fas fa-info-circle"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3 data-en="Personal Portfolio Website" data-fr="Site Web de Portfolio Personnel">Personal Portfolio Website</h3>
+              <p data-en="A responsive personal portfolio website built with HTML, CSS, and JavaScript." data-fr="Un site web de portfolio personnel responsive construit avec HTML, CSS et JavaScript.">
+                A responsive personal portfolio website built with HTML, CSS, and JavaScript.
+              </p>
+              <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-card" data-category="ui">
+            <div class="project-image">
+              <img src="/placeholder.svg?height=300&width=500" alt="Mobile App UI Design">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="#" class="project-link" target="_blank"><i class="fas fa-eye"></i></a>
+                  <a href="#" class="project-link" target="_blank"><i class="fab fa-behance"></i></a>
+                  <a href="#" class="project-link project-details-trigger" data-project="uidesign"><i class="fas fa-info-circle"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3 data-en="Mobile App UI Design" data-fr="Design d'Interface d'Application Mobile">Mobile App UI Design</h3>
+              <p data-en="A modern and clean UI design for a fitness tracking mobile application." data-fr="Un design d'interface moderne et épuré pour une application mobile de suivi de fitness.">
+                A modern and clean UI design for a fitness tracking mobile application.
+              </p>
+              <div class="project-tags">
+                <span>Figma</span>
+                <span>UI/UX</span>
+                <span>Prototyping</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="projects-cta" data-aos="fade-up" data-aos-delay="300">
+          <a href="https://github.com/" target="_blank" class="btn primary-btn" data-en="View More on GitHub" data-fr="Voir Plus sur GitHub">
+            <i class="fab fa-github"></i> View More on GitHub
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2 class="section-title" data-en="Client Testimonials" data-fr="Témoignages de Clients">Client Testimonials</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="testimonials-slider" data-aos="fade-up" data-aos-delay="100">
+          <div class="testimonial-item active">
+            <div class="testimonial-content">
+              <div class="testimonial-text">
+                <i class="fas fa-quote-left"></i>
+                <p data-en="Emmanuel is an exceptional mobile developer. His Flutter expertise helped us launch our app ahead of schedule with all the features we needed. His communication was clear and he was always available to answer questions." data-fr="Emmanuel est un développeur mobile exceptionnel. Son expertise en Flutter nous a aidés à lancer notre application avant la date prévue avec toutes les fonctionnalités dont nous avions besoin. Sa communication était claire et il était toujours disponible pour répondre aux questions.">
+                  Emmanuel is an exceptional mobile developer. His Flutter expertise helped us launch our app ahead of schedule with all the features we needed. His communication was clear and he was always available to answer questions.
+                </p>
+              </div>
+              <div class="testimonial-author">
+                <img src="/assets/img/del.jpg" alt="Client" class="author-image">
+                <div class="author-info">
+                  <h4>Sarah Johnson</h4>
+                  <p>CEO, FitTrack</p>
+                  <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-item">
+            <div class="testimonial-content">
+              <div class="testimonial-text">
+                <i class="fas fa-quote-left"></i>
+                <p data-en="Working with Emmanuel was a pleasure. He understood our requirements quickly and delivered a high-quality e-commerce app that exceeded our expectations. His attention to detail and problem-solving skills are impressive." data-fr="Travailler avec Emmanuel a été un plaisir. Il a rapidement compris nos exigences et a livré une application e-commerce de haute qualité qui a dépassé nos attentes. Son attention aux détails et ses compétences en résolution de problèmes sont impressionnantes.">
+                  Working with Emmanuel was a pleasure. He understood our requirements quickly and delivered a high-quality e-commerce app that exceeded our expectations. His attention to detail and problem-solving skills are impressive.
+                </p>
+              </div>
+              <div class="testimonial-author">
+                <img src="/assets/img/afa.jpg" alt="Client" class="author-image">
+                <div class="author-info">
+                  <h4>Michael Chen</h4>
+                  <p>Founder, EcoShop</p>
+                  <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-item">
+            <div class="testimonial-content">
+              <div class="testimonial-text">
+                <i class="fas fa-quote-left"></i>
+                <p data-en="Emmanuel provided excellent virtual assistant services for our company. His organizational skills and proactive approach helped streamline our operations significantly. He's reliable, efficient, and a pleasure to work with." data-fr="Emmanuel a fourni d'excellents services d'assistant virtuel pour notre entreprise. Ses compétences organisationnelles et son approche proactive ont contribué à rationaliser considérablement nos opérations. Il est fiable, efficace et agréable à travailler avec.">
+                  Emmanuel provided excellent virtual assistant services for our company. His organizational skills and proactive approach helped streamline our operations significantly. He's reliable, efficient, and a pleasure to work with.
+                </p>
+              </div>
+              <div class="testimonial-author">
+                <img src="/assets/img/afa.jpg" alt="Client" class="author-image">
+                <div class="author-info">
+                  <h4>Lisa Rodriguez</h4>
+                  <p>Operations Manager, TechStart</p>
+                  <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-controls">
+            <button class="testimonial-prev"><i class="fas fa-chevron-left"></i></button>
+            <div class="testimonial-dots">
+              <span class="testimonial-dot active"></span>
+              <span class="testimonial-dot"></span>
+              <span class="testimonial-dot"></span>
+            </div>
+            <button class="testimonial-next"><i class="fas fa-chevron-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2 class="section-title" data-en="Get In Touch" data-fr="Contactez-Moi">Get In Touch</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="contact-content">
+          <div class="contact-info" data-aos="fade-right" data-aos-duration="1000">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-text">
+                <h3 data-en="Location" data-fr="Emplacement">Location</h3>
+                <p>Kigali, Rwanda</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-text">
+                <h3 data-en="Email" data-fr="Email">Email</h3>
+                <p>afanyu.emmanuel@example.com</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="contact-text">
+                <h3 data-en="Phone" data-fr="Téléphone">Phone</h3>
+                <p>+250 798 971 739</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-clock"></i>
+              </div>
+              <div class="contact-text">
+                <h3 data-en="Availability" data-fr="Disponibilité">Availability</h3>
+                <p data-en="Monday - Friday: 9am - 6pm" data-fr="Lundi - Vendredi: 9h - 18h">Monday - Friday: 9am - 6pm</p>
+              </div>
+            </div>
+            <div class="social-links">
+              <a href="https://github.com/" target="_blank" class="social-link">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="www.linkedin.com/in/afanyuemmanuel" target="_blank" class="social-link">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="https://twitter.com/" target="_blank" class="social-link">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="https://wa.me/250XXXXXXXX" target="_blank" class="social-link whatsapp-link">
+                <i class="fab fa-whatsapp"></i>
+                <span data-en="Chat on WhatsApp" data-fr="Discuter sur WhatsApp">Chat on WhatsApp</span>
+              </a>
+            </div>
+          </div>
+          <div class="contact-form" data-aos="fade-left" data-aos-duration="1000">
+            <!-- Django CSRF Token will go here -->
+            <!-- {% csrf_token %} -->
+            <form id="contactForm" class="contact-form-element">
+              <div class="form-group">
+                <label for="name" data-en="Name" data-fr="Nom">Name</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="email" data-en="Email" data-fr="Email">Email</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="subject" data-en="Subject" data-fr="Sujet">Subject</label>
+                <input type="text" id="subject" name="subject" required>
+              </div>
+              <div class="form-group">
+                <label for="message" data-en="Message" data-fr="Message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+              </div>
+              <button type="submit" class="btn primary-btn" data-en="Send Message" data-fr="Envoyer le Message">
+                <i class="fas fa-paper-plane"></i> Send Message
+              </button>
+              <div class="form-status"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="contact-map" data-aos="fade-up" data-aos-delay="200">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255282.35853027376!2d29.98673765526314!3d-1.9441023959065903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dca4258ed8e797%3A0xf32b36a5411e0e91!2sKigali%2C%20Rwanda!5e0!3m2!1sen!2s!4v1620120354400!5m2!1sen!2s" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <!-- Project Details Modal -->
+  <div class="project-modal" id="projectModal">
+    <div class="modal-content">
+      <span class="close-modal"><i class="fas fa-times"></i></span>
+      <div class="modal-body">
+        <!-- Content will be loaded dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <a href="index.html">Afanyu Emmanuel</a>
+        </div>
+        <div class="footer-links">
+          <a href="#home" data-en="Home" data-fr="Accueil">Home</a>
+          <a href="#about" data-en="About" data-fr="À propos">About</a>
+          <a href="#skills" data-en="Skills" data-fr="Compétences">Skills</a>
+          <a href="#projects" data-en="Projects" data-fr="Projets">Projects</a>
+          <a href="#contact" data-en="Contact" data-fr="Contact">Contact</a>
+          <a href="virtual-assistant.html" data-en="VA Services" data-fr="Services d'AA">VA Services</a>
+        </div>
+        <div class="footer-controls">
+          <div class="language-toggle">
+            <button id="footer-en-toggle" class="active">EN</button>
+            <button id="footer-fr-toggle">FR</button>
+          </div>
+          <div class="theme-toggle">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Afanyu Emmanuel. <span data-en="All Rights Reserved." data-fr="Tous Droits Réservés.">All Rights Reserved.</span></p>
+        <p class="credits" data-en="Designed & Developed with" data-fr="Conçu et Développé avec">Designed & Developed with <i class="fas fa-heart"></i></p>
+      </div>
+    </div>
+    <div class="footer-shape"></div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <a href="#" class="back-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </a>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/skills.js"></script>
+  <script src="assets/js/projects.js"></script>
+  <script src="assets/js/testimonials.js"></script>
+  <script src="assets/js/contact.js"></script>
+</body>
+</html>
